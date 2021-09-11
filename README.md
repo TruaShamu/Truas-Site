@@ -1,2 +1,2 @@
 # Truas-Site
-Trua's website stuff
+Stuff for my website on w3spaces!
