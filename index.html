@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+        <!-- Bootstrap JS Dependencies -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+        <!-- Custom CSS -->
+        <link href="styles.css" rel="stylesheet" />
+        <script src="js/script.js"></script>
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
+
+        <!-- Bootstrap Social -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"
+            integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet" />
+
+        <style>
+            /* CSS */
+
+            /* CSS */
+
+            .sidebar {
+                position: absolute;
+                left: 30px;
+                height: 600px;
+                width: 15%;
+                position: fixed;
+                top: 30%;
+                margin-top: -100px;
+                padding-top: 0px;
+                background-color: lightblue;
+                border-radius: 2px 5px 5px 2px;
+                min-width: 200px;
+            }
+
+            /* .sidebar div {
+                padding: 8px;
+                font-size: 24px;
+                display: block;
+            }
+            */
+
+            .body-text {
+                margin-left: 150px;
+                font-size: 18px;
+            }
+
+            nav {
+                /*border: 1px solid #634539;*/
+                border-style: solid;
+                border-width: thin;
+                border-radius: 1px 1px 1px 1px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                background-color: #a3c3e6;
+                margin: auto;
+                height: 70px;
+            }
+
+            body {
+                background-color: grey;
+            }
+
+            vl {
+                z-index: 2;
+                border-left: 6px solid green;
+                height: 500px;
+                position: absolute;
+                left: 50%;
+                margin-left: -3px;
+                top: 0;
+            }
+
+            #fixedSidebar {
+                color: black;
+                z-index: 1;
+                position: fixed;
+                height: 600px;
+                padding-left: 50px;
+                padding-right: 50px;
+                background-color: floralwhite;
+                top: 50%;
+                margin-top: -100px;
+                /*display: flex;
+                justify-content: center;
+                align-items: center;*/
+            }
+
+
+            @media only screen and (min-width: 960px) {
+                .navbar .navbar-nav .nav-item .nav-link {
+                    padding: 0 0.5em;
+                }
+                .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+                    border-right: 2px solid #000000;
+                }
+            }
+        </style>
+
+        <title>TruShu's Website</title>
+    </head>
+
+    <body>
+        <!-- SCM Music Player https://www.scmplayer.net -->
+        <script
+            type="text/javascript"
+            src="https://www.scmplayer.net/script.js"
+            data-config="{'skin':'https://static.tumblr.com/su8juwr/4oGmst8ke/simpl.css','volume':50,'autoplay':false,'shuffle':false,'repeat':0,'placement':'top','showplaylist':false,'playlist':[{'title':'Genshin Soundtrack - Legend of Redemption','url':'https://www.youtube.com/watch?v=GiMTMeLlctw'},{'title':'Genshin Soundtrack - Moon in One%27s Cup','url':'https://www.youtube.com/watch?v=6k21sSDavWU'},{'title':'Genshin Soundtrack - Lover%27s Oath','url':'https://www.youtube.com/watch?v=3CV4yrXm9qI'},{'title':'Genshin Soundtrack - Tender Strength','url':'https://www.youtube.com/watch?v=8TG-toLTHWA'},{'title':'Genshin Soundtrack - The Horizon','url':'https://www.youtube.com/watch?v=ne1gXNcGpKQ'},{'title':'Genshin Soundtrack - Moonlit Wilderness','url':'https://www.youtube.com/watch?v=1B4Mkj-EOQ0'},{'title':'Genshin Soundtrack - Another Hopeful Tomorrow','url':'https://www.youtube.com/watch?v=x6jUyKT8Sto'},{'title':'Genshin Soundtrack - A New Day With Hope','url':'https://www.youtube.com/watch?v=P3mSUCPRMqE'},{'title':'Genshin Soundtrack - A Letter From Ajax','url':'https://www.youtube.com/watch?v=AXjnVSZozYI'}]}"
+        ></script>
+        <!-- SCM Music Player script end -->
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+        
+        <div class="sidebar">
+            <div style="text-align: center;">
+                <br />
+
+                <img src="https://placekitten.com/100/100" />
+                <br />
+                <br />
+                <p>this is trua's little wip website</p>
+                <br>
+                Current Mood: <a href="https://www.imood.com/users/trushu"><img src="https://moods.imood.com/display/uname-trushu/imood.gif" alt="The current mood of trushu at www.imood.com" border="0"></a>
+                <br>
+                <a href="#about">Link 1</a>
+                <br />
+                <a href="#services">Link 2</a>
+                <br />
+                <a href="#clients">Link 3</a>
+                <br />
+                <a href="#contact">Link 4</a>
+                <br />
+                <br />
+                My button:
+                <br />
+                <img src="https://placekitten.com/88/31" />
+                <br />
+                <br />
+                <textarea id="w3review" name="w3review" rows="2" cols="15" style="font-size: 15px;">
+                    <a href="https://write-box.appspot.com/"><img src="https://placekitten.com/88/31"></a>
+                </textarea>
+
+                        </div>
+        </div>
+
+        
+        <div style="border-style:solid; border-width: thin">
+        <div class="col-7 mx-auto main-content">
+            <br />
+
+            <!-- The header -->
+            <header class="jumbotron"></header>
+            <nav class="navbar">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <br />
+
+            <div class="text-stuff">
+                <div class="container">
+                    <div class="row row-content align-self-center">
+                        <div class="col-12">
+                            <h4>WIP SITE -</h4>
+                            <p class="d-none d-sm-block">
+                                This is Trua's tiny little website (w3sspaces version). It's still in progress though....
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            
+
+            <!-- The footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <div style="text-align: center;">
+                                Made by Trua || Hosted on W3Spaces
+                                <p>Date/Time: <span id="datetime"></span></p>
+
+                                <script>
+                                    var dt = new Date();
+                                    document.getElementById("datetime").innerHTML =
+                                        ("0" + dt.getDate()).slice(-2) + "." + ("0" + (dt.getMonth() + 1)).slice(-2) + "." + dt.getFullYear() + " " + ("0" + dt.getHours()).slice(-2) + ":" + ("0" + dt.getMinutes()).slice(-2);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+</div>
+        <!-- Back to top button -->
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>
