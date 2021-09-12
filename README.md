@@ -1,5 +1,6 @@
 # Truas-Site
 Stuff for my website on w3spaces!
+(Built with bootstrap and my poor css skills, of course)
 
 Screenshot of my current layout...
 ![screenshot here](https://i.ibb.co/mtSsjzQ/image.png)
